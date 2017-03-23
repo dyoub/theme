@@ -1,0 +1,28 @@
+﻿// Copyright (c) Dyoub Applications. All rights reserved.
+// Licensed under MIT (https://github.com/dyoub/app/blob/master/LICENSE).
+
+@import "palette";
+
+.error {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+    color: $concrete;
+
+    &.danger {
+        color: $danger;
+    }
+
+    &.warning {
+        color: $carrot;
+    }
+
+    .fa {
+        font-size: 64pt;
+    }
+
+    p {
+        text-transform: uppercase;
+        margin: 15px;
+    }
+}

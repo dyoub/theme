@@ -1,0 +1,6 @@
+﻿[
+  {
+    "outputFile": "dist/dyoub-theme.min.css",
+    "inputFile": "src/css/compile.scss"
+  }
+]

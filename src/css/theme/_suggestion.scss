@@ -1,0 +1,45 @@
+﻿// Copyright (c) Dyoub Applications. All rights reserved.
+// Licensed under MIT (https://github.com/dyoub/app/blob/master/LICENSE).
+
+@import "palette";
+
+.suggestion {
+    position: relative;
+
+    .suggestion-body {
+        position: absolute;
+        display: none;
+        width: 100%;
+        z-index: 1000;
+        padding: 6px 12px;
+        font-size: 11pt;
+        line-height: 1.4;
+        background-color: $clouds;
+        -webkit-background-clip: padding-box;
+        -moz-background-clip: padding;
+        background-clip: padding-box;
+        border-bottom: 1px solid $primary;
+
+        .box {
+            margin-bottom: 5px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &.open {
+        .suggestion-body {
+            display: block;
+        }
+
+        input {
+            border-color: darken($white, 30%);
+        }
+    }
+
+    button {
+        margin: 0;
+    }
+}

@@ -1,0 +1,64 @@
+﻿<!--
+Copyright (c) Dyoub Applications. All rights reserved.
+Licensed under MIT (https://github.com/dyoub/app/blob/master/LICENSE).
+-->
+
+<div class="page-header">
+    Directive
+    <span class="text-primary">
+        data-valid-*
+    </span>
+</div>
+
+<form name="dataValidForm" class="card">
+    <div class="grid-row">
+        <div class="grid-column small-6 medium-6 large-6">
+            <div class="grid-row">
+                <div class="grid-column small-6 medium-6 large-6">
+                    <div class="box" data-has-error="dataValidForm.numberMin.$invalid">
+                        <label>
+                            data-valid-number-min (10)
+                        </label>
+                        <input type="text" name="numberMin" data-ng-model="dataTypeModel.numberMin"
+                               data-type-number="4" data-valid-number-min="10" />
+                    </div>
+                </div>
+
+                <div class="grid-column small-6 medium-6 large-6">
+                    <div class="box" data-has-error="dataValidForm.numberMax.$invalid">
+                        <label>
+                            data-valid-number-max
+                            (<span data-ng-bind="dataTypeModel.numberMin || 10"></span>)
+                        </label>
+                        <input type="text" name="numberMax" data-ng-model="dataTypeModel.numberMax"
+                               data-type-number="4" data-valid-number-max="dataTypeModel.numberMin || 10" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-column small-6 medium-6 large-6">
+            <div class="grid-row">
+                <div class="grid-column small-6 medium-6 large-6">
+                    <div class="box" data-has-error="dataValidForm.previousDate.$invalid">
+                        <label>
+                            data-valid-date-before
+                        </label>
+                        <input type="text" name="previousDate" data-ng-model="dataTypeModel.previousDate" data-type-date
+                               data-valid-date-before="dataTypeModel.futureDate" />
+                    </div>
+                </div>
+
+                <div class="grid-column small-6 medium-6 large-6">
+                    <div class="box" data-has-error="dataValidForm.futureDate.$invalid">
+                        <label>
+                            data-valid-date-after
+                        </label>
+                        <input type="text" name="futureDate" data-ng-model="dataTypeModel.futureDate" data-type-date
+                               data-valid-date-after="dataTypeModel.previousDate" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,28 @@
+﻿// Copyright (c) Dyoub Applications. All rights reserved.
+// Licensed under MIT (https://github.com/dyoub/app/blob/master/LICENSE).
+
+@import "palette";
+
+@mixin new-hint-color($name, $bg-color) {
+    .hint.#{$name} {
+        background-color: $bg-color;
+    }
+}
+
+.hint {
+    display: inline;
+    padding: 5px;
+    color: $white;
+    background-color: $concrete;
+    font-size: 10pt;
+    text-align: center;
+    vertical-align: baseline;
+    text-transform: uppercase;
+    font-size: 8pt;
+    white-space: nowrap;
+}
+
+@include new-hint-color(primary, $primary);
+@include new-hint-color(success, $success);
+@include new-hint-color(warning, $warning);
+@include new-hint-color(danger, $danger);

@@ -1,0 +1,14 @@
+﻿// Copyright (c) Dyoub Applications. All rights reserved.
+// Licensed under MIT (https://github.com/dyoub/app/blob/master/LICENSE).
+
+@import "palette";
+@import "screen";
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+
+    @media #{$large-screen} {
+        width: 1170px;
+    }
+}

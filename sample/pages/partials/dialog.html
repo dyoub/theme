@@ -1,0 +1,37 @@
+﻿<!--
+Copyright (c) Dyoub Applications. All rights reserved.
+Licensed under MIT (https://github.com/dyoub/app/blob/master/LICENSE).
+-->
+
+<div class="page-header">
+    Util
+    <span class="text-primary">
+        Dialog
+    </span>
+</div>
+
+<div class="box" data-ng-controller="DialogController as dialogCtrl">
+    <div data-dialog></div>
+
+    <div class="form-group">
+        <button type="button" class="success" data-ng-click="dialogCtrl.showSuccess()">
+            Success dialog
+        </button>
+
+        <button type="button" class="info" data-ng-click="dialogCtrl.showInfo()">
+            Info dialog
+        </button>
+
+        <button type="button" class="danger" data-ng-click="dialogCtrl.showDanger()">
+            Danger dialog
+        </button>
+    </div>
+</div>
+
+<div class="box text-muted font-11">
+    <strong>
+        NOTE:
+    </strong>
+    By design you must declare <code>data-dialog</code> directive only once. Refer the file
+    <code>/sample/js/controllers/dialog.controller.js</code> to know about how to use it by code.
+</div>

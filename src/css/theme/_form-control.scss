@@ -1,0 +1,114 @@
+﻿// Copyright (c) Dyoub Applications. All rights reserved.
+// Licensed under MIT (https://github.com/dyoub/app/blob/master/LICENSE).
+
+@import "palette";
+
+@mixin vendors-placeholder($element) {
+    #{$element}::-moz-placeholder {
+        color: darken($white, 50%);
+        opacity: 1;
+    }
+
+    #{$element}:-ms-input-placeholder {
+        color: darken($white, 50%);
+    }
+
+    #{$element}::-webkit-input-placeholder {
+        color: darken($white, 50%);
+    }
+
+    #{$element}::-ms-expand {
+        background-color: transparent;
+        border: 0;
+    }
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+label {
+    color: $concrete;
+    display: block;
+    margin: 10px 0;
+    padding: 0;
+}
+
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: $midnight;
+    background-color: $clouds;
+    background-image: none;
+    border: none;
+    border-bottom: 1px solid $clouds;
+
+    &:focus {
+        border-bottom: 1px solid $primary;
+        outline: 0;
+    }
+
+    &[disabled] {
+        cursor: not-allowed;
+        border-bottom: 1px solid $clouds;
+    }
+}
+
+input,
+select {
+    height: 46px;
+}
+
+textarea {
+    height: auto;
+    resize: none;
+}
+
+.has-error {
+    label {
+        color: $danger;
+    }
+
+    input,
+    select,
+    textarea {
+        border-bottom: 1px solid $danger;
+
+        &[disabled] {
+            cursor: not-allowed;
+            border-bottom: 1px solid $clouds;
+        }
+    }
+}
+
+.help {
+    font-family: FontAwesome;
+    color: $info;
+    cursor: pointer;
+    -moz-transition: color 0.25s ease-out, color 0.25s ease-out;
+    -o-transition: color 0.25s ease-out, color 0.25s ease-out;
+    -webkit-transition: color 0.25s ease-out, color 0.25s ease-out;
+    transition: color 0.25s ease-out, color 0.25s ease-out;
+
+    &:after {
+        content: "\f059";
+    }
+
+    &:hover {
+        color: darken($info, 10%);
+    }
+}

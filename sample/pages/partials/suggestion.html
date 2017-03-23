@@ -1,0 +1,33 @@
+﻿<!--
+Copyright (c) Dyoub Applications. All rights reserved.
+Licensed under MIT (https://github.com/dyoub/app/blob/master/LICENSE).
+-->
+
+<div class="page-header">
+    Directive
+    <span class="text-primary">
+        data-suggestion-open
+    </span>
+</div>
+
+<div class="card" data-ng-controller="SuggestionController as suggestionSampleCtrl">
+    <div class="suggestion" data-suggestion-open="suggestionSampleCtrl.suggestionOpened">
+        <label data-translate="SearchFruit"></label>
+
+        <input type="text" name="fruitName" data-ng-model="suggestionSampleCtrl.selectedFruit.name" maxlength="80"
+               data-event-typing="suggestionSampleCtrl.newFruitSearch()"
+               data-event-typing-end="suggestionSampleCtrl.searchFruits()" />
+
+        <div class="suggestion-body">
+            <em class="text-muted" data-ng-show="suggestionSampleCtrl.searching">
+                Searching...
+            </em>
+            <div class="text-primary" data-translate="NoRecordsFound" data-ng-show="suggestionSampleCtrl.noRecords()"></div>
+            <div class="box" data-ng-repeat="fruit in suggestionSampleCtrl.fruits">
+                <button type="button" class="primary small" data-translate="Select"
+                        data-ng-click="suggestionSampleCtrl.hideSuggestion()"></button>
+                <span data-ng-bind="fruit.name"></span>
+            </div>
+        </div>
+    </div>
+</div>

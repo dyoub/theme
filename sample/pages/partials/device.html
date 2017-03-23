@@ -1,0 +1,19 @@
+﻿<!--
+Copyright (c) Dyoub Applications. All rights reserved.
+Licensed under MIT (https://github.com/dyoub/app/blob/master/LICENSE).
+-->
+
+<div class="page-header">
+    Directive
+    <span class="text-primary">
+        data-device-*
+    </span>
+</div>
+
+<div class="box" data-ng-controller="DeviceController as deviceCtrl">
+    <button type="button" data-device-file="deviceCtrl.selectedFile" data-device-file-change="deviceCtrl.showMessage()"
+            data-device-file-type="image" data-device-file-maxsize="5242880">
+        <i class="fa fa-folder-open"></i>
+        data-device-file-manager
+    </button>
+</div>

@@ -1,0 +1,62 @@
+﻿// Copyright (c) Dyoub Applications. All rights reserved.
+// Licensed under MIT (https://github.com/dyoub/app/blob/master/LICENSE).
+
+@import "palette";
+
+@mixin new-text-color($name, $text-color) {
+    .text-#{$name} {
+        color: $text-color;
+    }
+}
+
+@mixin font-sizes($min-size, $max-size) {
+    @for $size from $min-size through $max-size {
+        .font-#{$size} {
+            font-size: $size + pt;
+        }
+    }
+}
+
+p {
+    margin: 5px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-nowrap {
+    white-space: nowrap;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+@include new-text-color(muted, $concrete);
+@include new-text-color(primary, $primary);
+@include new-text-color(success, $success);
+@include new-text-color(warning, $warning);
+@include new-text-color(danger, $danger);
+
+@include font-sizes(8, 22);

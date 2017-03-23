@@ -1,0 +1,21 @@
+﻿<!--
+Copyright (c) Dyoub Applications. All rights reserved.
+Licensed under MIT (https://github.com/dyoub/app/blob/master/LICENSE).
+-->
+
+<div class="page-header">
+    Directive
+    <span class="text-primary">
+        data-has-error
+    </span>
+</div>
+
+<form name="hasErrorForm" class="card">
+    <div class="box" data-has-error="hasErrorForm.sampleField.$invalid">
+        <label>
+            Required field
+            <span class="text-danger">*</span>
+        </label>
+        <input type="text" name="sampleField" data-ng-model="hasErrorModel.something" placeholder="TypeSomething" required />
+    </div>
+</form>

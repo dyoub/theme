@@ -1,0 +1,67 @@
+﻿// Copyright (c) Dyoub Applications. All rights reserved.
+// Licensed under MIT (https://github.com/dyoub/app/blob/master/LICENSE).
+
+@import "palette";
+
+.page-header {
+    color: $concrete;
+    font-size: 12pt;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 10px 0 5px 0;
+    margin: 20px 0;
+    border-bottom: 1px solid $rain;
+}
+
+.step-header {
+    color: $concrete;
+    margin: 20px 0;
+    font-size: 11pt;
+
+    .page-header {
+        margin: 0;
+    }
+
+    .step {
+        color: $concrete;
+        display: inline-block;
+        text-decoration: none;
+        padding: 5px 10px 5px 10px;
+        border-top: 2px solid transparent;
+        -moz-transition: border-color 0.25s ease-out;
+        -o-transition: border-color 0.25s ease-out;
+        -webkit-transition: border-color 0.25s ease-out;
+        transition: border-color 0.25s ease-out;
+
+        &.active {
+            border-color: $success;
+            color: $success;
+        }
+
+        &:hover,
+        &:focus {
+            border-color: $success;
+        }
+    }
+
+    .separator {
+        &:after {
+            content: "\f105";
+            font-family: FontAwesome;
+        }
+    }
+}
+
+.list-header {
+    text-align: center;
+    color: $concrete;
+    font-size: 11pt;
+    margin-bottom: 20px;
+}
+
+.menu-header {
+    color: $concrete;
+    font-size: 10pt;
+    padding: 10px 0;
+    text-transform: uppercase;
+}

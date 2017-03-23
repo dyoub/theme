@@ -1,0 +1,16 @@
+﻿// Copyright (c) Dyoub Applications. All rights reserved.
+// Licensed under MIT (https://github.com/dyoub/app/blob/master/LICENSE).
+
+@import "palette";
+
+@mixin new-background-color($name, $bg-color) {
+    .bg-#{$name} {
+        background-color: $bg-color;
+    }
+}
+
+@include new-background-color(muted, darken($white, 50%));
+@include new-background-color(primary, $primary);
+@include new-background-color(success, $success);
+@include new-background-color(warning, $warning);
+@include new-background-color(danger, $danger);

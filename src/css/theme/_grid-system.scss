@@ -1,0 +1,65 @@
+﻿// Copyright (c) Dyoub Applications. All rights reserved.
+// Licensed under MIT (https://github.com/dyoub/app/blob/master/LICENSE).
+
+@import "clearfix";
+@import "screen";
+
+@mixin column-size($screen-size) {
+    $max-columns: 12;
+    @for $column from 1 through $max-columns {
+        .grid-column.#{$screen-size}-#{$column} {
+            width: percentage($column / $max-columns);
+        }
+    }
+}
+
+@mixin column-hidden($screen-size) {
+    .hide-#{$screen-size} {
+        display: none;
+    }
+}
+
+.grid-row {
+    @include clearfix();
+    margin: 0 -15px;
+}
+
+.grid-row,
+.grid-column {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.grid-column {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding: 0 15px;
+}
+
+@media #{$tiny-screen} {
+    @include column-size(tiny);
+    @include column-hidden(tiny);
+}
+
+@media #{$compact-screen} {
+    @include column-size(compact);
+    @include column-hidden(compact);
+}
+
+@media #{$small-screen} {
+    @include column-size(small);
+    @include column-hidden(small);
+}
+
+@media #{$medium-screen} {
+    @include column-size(medium);
+    @include column-hidden(medium);
+}
+
+@media #{$large-screen} {
+    @include column-size(large);
+    @include column-hidden(large);
+}

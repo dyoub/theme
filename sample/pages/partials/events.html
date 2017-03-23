@@ -1,0 +1,44 @@
+﻿<!--
+Copyright (c) Dyoub Applications. All rights reserved.
+Licensed under MIT (https://github.com/dyoub/app/blob/master/LICENSE).
+-->
+
+<div class="page-header">
+    Directive
+    <span class="text-primary">
+        data-event-*
+    </span>
+</div>
+
+<label>
+    data-event-focusout
+</label>
+
+<div class="card" data-ng-click="clicked = 'inside'" data-event-focusout="clicked = 'outside'" data-ng-init="clicked = 'not-clicked-yet'">
+    <span data-ng-show="clicked == 'not-clicked-yet'">Click inside or outside the card</span>
+    <span data-ng-show="clicked == 'inside'">You clicked inside the card</span>
+    <span data-ng-show="clicked == 'outside'">You clicked outside the card</span>
+</div>
+
+<div class="card">
+    <div class="grid-row">
+        <div class="grid-column small-6 medium-6 large-6">
+            <div class="box">
+                <label>
+                    data-event-typing
+                    <em class="text-success" data-ng-show="isTyping">You are typing...</em>
+                </label>
+                <input type="text" data-ng-model="typingSample" data-event-typing="isTyping = true" data-event-typing-end="isTyping = false" placeholder="Start typing here" />
+            </div>
+        </div>
+        <div class="grid-column small-6 medium-6 large-6">
+            <div class="box">
+                <label>
+                    data-event-key-enter
+                    <em class="text-success" data-ng-show="enterKeyPressed">You pressed the enter key</em>
+                </label>
+                <input type="text" data-ng-model="keyValueSample" data-event-key-enter="enterKeyPressed = true" placeholder="Press the enter key" />
+            </div>
+        </div>
+    </div>
+</div>

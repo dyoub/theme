@@ -1,0 +1,29 @@
+﻿// Copyright (c) Dyoub Applications. All rights reserved.
+// Licensed under MIT (https://github.com/dyoub/app/blob/master/LICENSE).
+
+@import "palette";
+
+.card {
+    background: $white;
+    padding: 15px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 1px 1px darken($white, 30%);
+    box-shadow: 0 1px 1px darken($white, 30%);
+
+    .box {
+        margin-bottom: 10px;
+    }
+
+    &.list {
+        padding: 0;
+    }
+
+    .list-item {
+        border-bottom: 1px solid $clouds;
+        padding: 15px;
+
+        &:last-child {
+            border: none;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+﻿<!--
+Copyright (c) Dyoub Applications. All rights reserved.
+Licensed under MIT (https://github.com/dyoub/app/blob/master/LICENSE).
+-->
+
+<div class="page-header">
+    Directive
+    <span class="text-primary">
+        data-modal-open
+    </span>
+</div>
+
+<div class="box">
+    <button type="button" data-ng-click="modalDefaultOpened = true">
+        Open Modal
+    </button>
+</div>
+
+<div class="modal" data-modal-open="modalDefaultOpened">
+    <div class="modal-content">
+        <div class="box">
+            Some question to the user?
+        </div>
+        <button type="button" class="success" data-ng-click="modalDefaultOpened = false">
+            Yes
+        </button>
+        <button type="button" data-ng-click="modalDefaultOpened = false">
+            No
+        </button>
+    </div>
+</div>

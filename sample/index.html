@@ -1,0 +1,78 @@
+﻿<!--
+  Copyright (c) Dyoub Applications. All rights reserved.
+  Licensed under MIT (https://github.com/dyoub/app/blob/master/LICENSE).
+-->
+<!DOCTYPE html>
+<html data-ng-app="sample">
+<head>
+    <base href="/" />
+    <meta charset="utf-8" />
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link type="text/css" rel="stylesheet" href="/dist/dyoub-theme.min.css" />
+    <title>dyoub</title>
+</head>
+<body>
+    <div data-ng-include="'/sample/pages/partials/navbar.html'"></div>
+    <div class="container">
+        <div class="menu-header" data-translate="MenuHeader"></div>
+        <div class="grid-row">
+            <div class="grid-column compact-6 small-4 medium-4 large-3">
+                <a href="/sample/pages/documentation.html" class="as-button card primary">
+                    <div class="card-info">
+                        <div class="value">10+</div>
+                        <div data-translate="Samples"></div>
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <div class="card-title">
+                        <span data-translate="Documentation"></span>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-column compact-6 small-4 medium-4 large-3">
+                <a href="/sample/pages/form.html" class="as-button card success">
+                    <div class="card-info">
+                        <div data-translate="Template"></div>
+                        <i class="fa fa-file"></i>
+                    </div>
+                    <div class="card-title">
+                        <span data-translate="Form"></span>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-column compact-6 small-4 medium-4 large-3">
+                <a href="/sample/pages/portfolio.html" class="as-button card emerald">
+                    <div class="card-info">
+                        <div data-translate="Welcome"></div>
+                        <i class="fa fa-external-link"></i>
+                    </div>
+                    <div class="card-title">
+                        <span data-translate="Portfolio"></span>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-column compact-6 small-4 medium-4 large-3">
+                <a href="/sample/pages/not-found.html" class="as-button card carrot">
+                    <div class="card-info">
+                        <div class="value">404</div>
+                        <div data-translate="NotFound"></div>
+                        <i class="fa fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="card-title">
+                        <span data-translate="ErrorPage"></span>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script type="text/javascript" src="/dist/dyoub-theme.min.js"></script>
+    <script type="text/javascript" src="/sample/js/locale/en-US.js"></script>
+    <script type="text/javascript" src="/sample/js/modules/sample.module.js"></script>
+</body>
+</html>

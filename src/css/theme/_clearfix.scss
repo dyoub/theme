@@ -1,0 +1,14 @@
+﻿// Copyright (c) Dyoub Applications. All rights reserved.
+// Licensed under MIT (https://github.com/dyoub/app/blob/master/LICENSE).
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        display: table;
+        content: " ";
+    }
+
+    &:after {
+        clear: both;
+    }
+}
