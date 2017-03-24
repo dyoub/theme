@@ -2,50 +2,29 @@
   {
     "outputFileName": "dist/dyoub-theme.min.js",
     "inputFiles": [
-      "src/js/js-extensions/array.js",
-      "src/js/js-extensions/calendar.js",
-      "src/js/js-extensions/date.js",
-      "src/js/js-extensions/money.js",
-      "src/js/js-extensions/number.js",
-      "src/js/js-extensions/string.js",
-      "src/js/jqlite-extensions/caret.js",
-      "src/js/jqlite-extensions/focusout.js",
-      "src/js/jqlite-extensions/keydown.js",
-      "src/js/jqlite-extensions/keypress.js",
-      "src/js/jqlite-extensions/mask.js",
-      "src/js/jqlite-extensions/number.js",
-      "src/js/lib/modules/theme.module.js",
-      "src/js/lib/filters/ctime.filter.js",
-      "src/js/lib/filters/escape-html.filter.js",
-      "src/js/lib/filters/month.filter.js",
-      "src/js/lib/filters/translate.filter.js",
-      "src/js/lib/services/buffer.service.js",
-      "src/js/lib/services/dialog.service.js",
-      "src/js/lib/services/handle-error.service.js",
-      "src/js/lib/services/path.service.js",
-      "src/js/lib/services/translate.service.js",
-      "src/js/lib/directives/device/camera.directive.js",
-      "src/js/lib/directives/device/file-manager.directive.js",
-      "src/js/lib/directives/elements/form.directive.js",
-      "src/js/lib/directives/elements/input.directive.js",
-      "src/js/lib/directives/elements/placeholder.directive.js",
-      "src/js/lib/directives/events/focusout.directive.js",
-      "src/js/lib/directives/events/key-enter.directive.js",
-      "src/js/lib/directives/events/typing.directive.js",
-      "src/js/lib/directives/theme/dialog.directive.js",
-      "src/js/lib/directives/theme/has-error.directive.js",
-      "src/js/lib/directives/theme/help.directive.js",
-      "src/js/lib/directives/theme/modal-open.directive.js",
-      "src/js/lib/directives/theme/suggestion-open.directive.js",
-      "src/js/lib/directives/types/date.directive.js",
-      "src/js/lib/directives/types/email.directive.js",
-      "src/js/lib/directives/types/number.directive.js",
-      "src/js/lib/directives/types/time.directive.js",
-      "src/js/lib/directives/validations/date-after.directive.js",
-      "src/js/lib/directives/validations/date-before.directive.js",
-      "src/js/lib/directives/validations/number-max.directive.js",
-      "src/js/lib/directives/validations/number-min.directive.js",
-      "src/js/lib/directives/translate.directive.js"
+      "src/js/js-extensions",
+      "src/js/jqlite-extensions",
+      "src/js/lib/modules",
+      "src/js/lib/filters",
+      "src/js/lib/services",
+      "src/js/lib/directives",
+      "src/js/lib/directives/device",
+      "src/js/lib/directives/elements",
+      "src/js/lib/directives/events",
+      "src/js/lib/directives/theme",
+      "src/js/lib/directives/types",
+      "src/js/lib/directives/validations"
     ]
+  },
+  {
+    "outputFileName": "sample/dyoub-theme.sample.min.js",
+    "inputFiles": [
+      "sample/js/modules",
+      "sample/js/controllers"
+    ]
+  },
+  {
+    "outputFileName": "spec/dyoub-theme.spec.min.js",
+    "inputFiles": []
   }
 ]
