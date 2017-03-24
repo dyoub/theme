@@ -8,8 +8,21 @@
     height: 60px;
     margin-bottom: 10px;
     background: $info;
-    -webkit-box-shadow: 0 1px 2px darken($white, 50%);
-    box-shadow: 0 1px 2px darken($white, 50%);
+
+    &.fixed {
+        position: fixed;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        -moz-transition: box-shadow 0.2s;
+        -o-transition: box-shadow 0.2s;
+        -webkit-transition: box-shadow 0.2s;
+        transition: box-shadow 0.2s;
+    }
+
+    &, &.fixed.scrolled {
+        -webkit-box-shadow: 0 1px 2px darken($white, 50%);
+        box-shadow: 0 1px 2px darken($white, 50%);
+    }
 
     .navbar-header, .logout {
         padding: 0 20px;
