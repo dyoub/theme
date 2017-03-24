@@ -17,7 +17,7 @@
     ]
   },
   {
-    "outputFileName": "sample/dyoub-theme.sample.min.js",
+    "outputFileName": "sample/js/dyoub-theme.sample.min.js",
     "inputFiles": [
       "sample/js/modules",
       "sample/js/controllers"
