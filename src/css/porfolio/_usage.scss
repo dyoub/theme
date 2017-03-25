@@ -1,7 +1,10 @@
-﻿@import "../theme/palette";
+﻿// Copyright (c) Dyoub Applications. All rights reserved.
+// Licensed under MIT (https://github.com/dyoub/app/blob/master/LICENSE).
+
+@import "../theme/palette";
 @import "../theme/screen";
 
-.usage {
+.portfolio .usage {
     background-color: $pool;
     padding: 30px 0;
     font-size: 14pt;

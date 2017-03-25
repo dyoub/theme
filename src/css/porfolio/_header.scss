@@ -1,7 +1,10 @@
-﻿@import "../theme/palette";
+﻿// Copyright (c) Dyoub Applications. All rights reserved.
+// Licensed under MIT (https://github.com/dyoub/app/blob/master/LICENSE).
+
+@import "../theme/palette";
 @import "../theme/screen";
 
-.header {
+.portfolio .header {
     background-color: $info;
     text-align: center;
     padding-top: 100px;
