@@ -1,2 +1,18 @@
 ﻿// Copyright (c) Dyoub Applications. All rights reserved.
 // Licensed under MIT (https://github.com/dyoub/app/blob/master/LICENSE).
+
+@import "../theme/palette";
+
+.portfolio .pricing {
+    background-color: $clouds;
+    padding: 20px 0;
+    text-align: center;
+    -webkit-box-shadow: inset 0 1px 1px darken($white, 30%);
+    box-shadow: inset 0 1px 1px darken($white, 30%);
+
+    .price .value {
+        color: $success;
+        font-size: 32pt;
+        font-weight: bold;
+    }
+}
