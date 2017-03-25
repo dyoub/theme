@@ -1,0 +1,55 @@
+﻿@import "../theme/palette";
+@import "../theme/screen";
+
+.header {
+    background-color: $info;
+    text-align: center;
+    padding-top: 100px;
+    width: 100%;
+    height: auto;
+    
+    .slogan {
+        color: $white;
+        font-size: 18pt;
+        margin-bottom: 20px;
+
+        .highlight {
+            color: $warning;
+        }
+    }
+
+    img.devices {
+        content: url("https://dyoub.s3.amazonaws.com/cdn/img/devices.png");
+        display: block;
+        margin: auto;
+        width: 60%;
+    }
+
+    @media #{$medium-screen} {
+        img.devices {
+            width: 70%;
+        }
+    }
+
+    @media #{$small-screen} {
+        img.devices {
+            width: 80%;
+        }
+    }
+
+    @media #{$compact-screen} {
+        font-size: 16pt;
+
+        img.devices {
+            width: 90%;
+        }
+    }
+
+    @media #{$tiny-screen} {
+        font-size: 12pt;
+
+        img.devices {
+            width: 100%;
+        }
+    }
+}
