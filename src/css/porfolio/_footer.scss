@@ -1,2 +1,42 @@
 ﻿// Copyright (c) Dyoub Applications. All rights reserved.
 // Licensed under MIT (https://github.com/dyoub/app/blob/master/LICENSE).
+
+@import "../theme/palette";
+
+.portfolio .footer {
+    background-color: $night;
+    padding: 20px;
+    border-top: 15px solid $bla;
+    text-align: center;
+    color: lighten($bla, 15%);
+
+    .d {
+        content: url("https://dyoub.s3.amazonaws.com/cdn/img/d.png");
+    }
+
+    a {
+        color: lighten($bla, 15%);
+        font-size: 11pt;
+
+        &:hover {
+            color: lighten($bla, 30%);
+        }
+    }
+
+    .social-media {
+        padding-top: 5px;
+        padding-bottom: 20px;
+
+        a {
+            font-size: 18pt;
+            text-decoration: none;
+        }
+    }
+
+    .separator {
+        &:before {
+            content: '\00b7';
+            padding: 0 5px;
+        }
+    }
+}
