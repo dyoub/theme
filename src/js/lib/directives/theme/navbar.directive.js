@@ -10,7 +10,7 @@
                 if ($element.hasClass('fixed')) {
                     $window = angular.element(window);
 
-                    $window.on('scroll', function () {
+                    $window.on('load scroll', function () {
                         if ($window.scrollTop()) {
                             $element.addClass('scrolled');
                         } else {
