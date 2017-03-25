@@ -11,6 +11,10 @@
     background-position: center center;
     background-attachment: fixed;
 
+    .container {
+        max-width: 920px;
+    }
+
     .section-title,
     .section-subtitle {
         text-align: center;
