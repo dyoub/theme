@@ -1,2 +1,51 @@
 ﻿// Copyright (c) Dyoub Applications. All rights reserved.
 // Licensed under MIT (https://github.com/dyoub/app/blob/master/LICENSE).
+
+@import "../theme/palette";
+@import "../theme/screen";
+
+@mixin colored-grid-row($name, $color) {
+    .grid-row.#{$name} {
+        .grid-column {
+            padding: 10px 25px;
+            margin-bottom: 25px;
+        }
+
+        .grid-column.left {
+            border-left: 8px solid darken($color, 5%);
+
+            .title {
+                color: darken($color, 5%);
+                font-size: 16pt;
+            }
+        }
+
+        .grid-column.right {
+            border-right: 8px solid $color;
+            text-align: right;
+
+            .title {
+                color: $color;
+                font-size: 16pt;
+            }
+        }
+
+        .description {
+            color: darken($concrete, 20%);
+            font-size: 11pt;
+        }
+    }
+}
+
+.portfolio .solutions {
+    padding: 25px 0;
+
+    .container {
+        max-width: 800px;
+    }
+}
+
+@include colored-grid-row(amethyst, $amethyst);
+@include colored-grid-row(info, $info);
+@include colored-grid-row(success, $success);
+@include colored-grid-row(danger, $danger);
