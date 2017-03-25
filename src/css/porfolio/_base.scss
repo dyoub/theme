@@ -10,4 +10,20 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+
+    .section-title,
+    .section-subtitle {
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 18pt;
+        font-weight: bold;
+    }
+
+    .section-subtitle {
+        font-size: 16pt;
+        margin-bottom: 20px;
+        font-weight: lighter;
+    }
 }
