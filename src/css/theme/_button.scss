@@ -16,6 +16,11 @@
         &:active:focus {
             color: $text-color;
             background-color: darken($bg-normal, 10%);
+
+            &.bordered,
+            &.bordered {
+                border-bottom: 5px solid darken($bg-normal, 15%);
+            }
         }
 
         &[disabled]:hover,
@@ -45,6 +50,11 @@
             background-color: transparent;
             text-decoration: none;
         }
+    }
+
+    button.#{$name}.bordered,
+    .as-button.#{$name}.bordered {
+        border-bottom: 5px solid darken($bg-normal, 5%);
     }
 }
 
@@ -93,6 +103,11 @@ button,
         color: $white;
         background-color: $concrete;
         text-decoration: none;
+
+        &.bordered,
+        &.bordered {
+            border-bottom: 5px solid darken($concrete, 5%);
+        }
     }
 
     &[disabled]:hover,
@@ -124,6 +139,11 @@ button,
         + .block {
             margin-top: 5px;
         }
+    }
+
+    &.bordered,
+    &.bordered {
+        border-bottom: 5px solid $clouds;
     }
 }
 
