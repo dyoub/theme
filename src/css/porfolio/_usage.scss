@@ -1,0 +1,36 @@
+﻿@import "../theme/palette";
+@import "../theme/screen";
+
+.usage {
+    background-color: $pool;
+    padding: 30px 0;
+    font-size: 14pt;
+
+    .usage-art {
+        text-align: right;
+
+        img.guy-working {
+            content: url("	https://dyoub.s3.amazonaws.com/cdn/img/guy-working.png");
+            padding: 0 50px;
+        }
+    }
+
+    .usage-description {
+        padding-top: 15px;
+
+        p {
+            line-height: 28pt;
+        }
+    }
+
+    @media #{$tiny-screen} {
+        .usage-description,
+        .usage-art {
+            text-align: center;
+        }
+
+        .usage-art img.guy-working {
+            padding: 0;
+        }
+    }
+}
