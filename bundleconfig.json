@@ -11,6 +11,7 @@
       "src/js/lib/directives/device",
       "src/js/lib/directives/elements",
       "src/js/lib/directives/events",
+      "src/js/lib/directives/portfolio",
       "src/js/lib/directives/theme",
       "src/js/lib/directives/types",
       "src/js/lib/directives/validations"
