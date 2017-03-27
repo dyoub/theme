@@ -14,51 +14,49 @@
         height: 50px;
     }
 
+    a {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        margin-top: 3px;
+        background-color: darken($primary, 10%);
+
+        &:hover {
+            background-color: darken($primary, 15%);
+        }
+    }
+
+    button {
+        font-size: 12pt;
+        font-weight: lighter;
+        line-height: 25px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &:active:hover,
+        &:active:focus {
+            color: $white;
+            background-color: darken($primary, 5%);
+            text-decoration: none;
+        }
+    }
+
     .grid-column.menu {
         text-align: center;
-
-        a {
-            color: $white;
-            line-height: 50px;
-            font-size: 14pt;
-            font-weight: lighter;
-            padding: 15px 10px;
-            text-decoration: none;
-            -moz-transition: background-color 0.25s ease-out, border-color 0.25s;
-            -o-transition: background-color 0.25s ease-out, border-color 0.25s;
-            -webkit-transition: background-color 0.25s ease-out, border-color 0.25s;
-            transition: background-color 0.25s ease-out, border-color 0.25s;
-
-            &:hover {
-                background-color: darken($primary, 5%);
-            }
-
-            &.active {
-                border-bottom: 5px solid $warning;
-            }
-        }
     }
 
     .grid-column.signin {
         text-align: right;
-
-        a {
-            -webkit-box-shadow: none;
-            box-shadow: none;
-            margin-top: 3px;
-            background-color: darken($primary, 10%);
-
-            &:hover {
-                background-color: darken($primary, 15%);
-            }
-        }
     }
 
     @media #{$compact-screen} {
         text-align: center;
 
         .grid-column.menu {
-            margin-bottom: 20px;
+            text-align: left;
+            margin-bottom: 5px;
 
             a {
                 padding: 10px 10px;
@@ -66,8 +64,8 @@
         }
 
         .grid-column.signin {
-            text-align: center;
-            margin-bottom: 10px;
+            text-align: right;
+            margin-bottom: 5px;
         }
     }
 
@@ -75,7 +73,7 @@
         text-align: center;
 
         .grid-column.menu {
-            margin-bottom: 20px;
+            margin-bottom: 5px;
 
             a {
                 padding: 10px 10px;
@@ -84,7 +82,7 @@
 
         .grid-column.signin {
             text-align: center;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
     }
 }

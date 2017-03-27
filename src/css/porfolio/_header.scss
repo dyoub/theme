@@ -7,13 +7,14 @@
 .portfolio .header {
     background-color: $primary;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 90px;
     width: 100%;
     height: auto;
     
     .slogan {
         color: $white;
-        font-size: 18pt;
+        font-size: 16pt;
+        font-weight: lighter;
         margin-bottom: 20px;
 
         .highlight {
