@@ -38,7 +38,7 @@
         };
     }
 
-    angular.module('dyoubTheme').directive('dialog', [
+    angular.module('dyoub.theme').directive('dialog', [
         'Dialog',
         AppDialogDirective
     ]);

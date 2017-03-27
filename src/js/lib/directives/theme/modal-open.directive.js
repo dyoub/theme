@@ -20,7 +20,7 @@
         };
     }
 
-    angular.module('dyoubTheme').directive('modalOpen', [
+    angular.module('dyoub.theme').directive('modalOpen', [
         ModalOpenDirective
     ]);
 

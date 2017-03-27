@@ -14,7 +14,7 @@
         };
     }
 
-    angular.module('dyoubTheme').factory('HandleError', [
+    angular.module('dyoub.theme').factory('HandleError', [
         'Dialog',
         HandleErrorService
     ]);

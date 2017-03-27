@@ -18,7 +18,7 @@
         };
     }
 
-    angular.module('dyoubTheme').directive('hasError', [
+    angular.module('dyoub.theme').directive('hasError', [
         HasErrorDirective
     ]);
 

@@ -12,7 +12,7 @@
         };
     }
 
-    angular.module('dyoubTheme').directive('placeholder', [
+    angular.module('dyoub.theme').directive('placeholder', [
         'Translate',
         PlaceholderDirective
     ]);

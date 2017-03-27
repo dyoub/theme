@@ -57,7 +57,7 @@
         a.remove();
     };
 
-    angular.module('dyoubTheme').service('Buffer', [
+    angular.module('dyoub.theme').service('Buffer', [
         '$sce',
         BufferService
     ]);

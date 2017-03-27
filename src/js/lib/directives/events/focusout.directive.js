@@ -14,7 +14,7 @@
         };
     }
 
-    angular.module('dyoubTheme').directive('eventFocusout', [
+    angular.module('dyoub.theme').directive('eventFocusout', [
         '$document',
         '$parse',
         EventFocusoutDirective

@@ -2,5 +2,5 @@
 // Licensed under MIT (https://github.com/dyoub/app/blob/master/LICENSE).
 
 (function () {
-    angular.module('sample', ['dyoubTheme']);
+    angular.module('sample', ['dyoub.theme']);
 })();

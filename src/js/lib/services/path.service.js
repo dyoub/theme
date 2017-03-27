@@ -55,7 +55,7 @@
         this.$window.location.href = this.build(pattern, params);
     };
 
-    angular.module('dyoubTheme').service('Path', [
+    angular.module('dyoub.theme').service('Path', [
         '$window',
         PathService
     ]);

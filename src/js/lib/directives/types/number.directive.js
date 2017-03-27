@@ -54,7 +54,7 @@
         };
     }
 
-    angular.module('dyoubTheme').directive('typeNumber', [
+    angular.module('dyoub.theme').directive('typeNumber', [
         '$compile',
         '$filter',
         '$locale',

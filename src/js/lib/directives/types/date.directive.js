@@ -52,7 +52,7 @@
         };
     }
 
-    angular.module('dyoubTheme').directive('typeDate', [
+    angular.module('dyoub.theme').directive('typeDate', [
         '$filter',
         '$parse',
         TypeDateDirective

@@ -12,7 +12,7 @@
         }
     }
 
-    angular.module('dyoubTheme').filter('escapeHtml', [
+    angular.module('dyoub.theme').filter('escapeHtml', [
         '$sce',
         EscapeHtmlFilter
     ]);

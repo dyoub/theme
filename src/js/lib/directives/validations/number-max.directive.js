@@ -33,7 +33,7 @@
         };
     }
 
-    angular.module('dyoubTheme').directive('validNumberMax', [
+    angular.module('dyoub.theme').directive('validNumberMax', [
         '$parse',
         ValidNumberMaxDirective
     ]);

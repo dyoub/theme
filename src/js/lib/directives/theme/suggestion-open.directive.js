@@ -26,7 +26,7 @@
         };
     }
 
-    angular.module('dyoubTheme').directive('suggestionOpen', [
+    angular.module('dyoub.theme').directive('suggestionOpen', [
         '$parse',
         SuggestionDirective
     ]);

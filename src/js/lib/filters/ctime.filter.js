@@ -22,7 +22,7 @@
         }
     }
 
-    angular.module('dyoubTheme').filter('ctime', [
+    angular.module('dyoub.theme').filter('ctime', [
         '$filter',
         CTimeFilter
     ]);

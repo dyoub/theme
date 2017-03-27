@@ -39,7 +39,7 @@
         };
     }
 
-    angular.module('dyoubTheme').directive('eventTyping', [
+    angular.module('dyoub.theme').directive('eventTyping', [
         '$parse',
         EventTypingDirective
     ]);

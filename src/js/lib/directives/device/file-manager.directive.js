@@ -73,7 +73,7 @@
         };
     }
 
-    angular.module('dyoubTheme').directive('deviceFile', [
+    angular.module('dyoub.theme').directive('deviceFile', [
         '$parse',
         'Buffer',
         FileManagerDirective

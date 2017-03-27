@@ -22,7 +22,7 @@
         };
     }
 
-    angular.module('dyoubTheme').directive('navbar', [
+    angular.module('dyoub.theme').directive('navbar', [
         NavbarDirective
     ]);
 

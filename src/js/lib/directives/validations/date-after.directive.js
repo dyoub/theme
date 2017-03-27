@@ -33,7 +33,7 @@
         };
     }
 
-    angular.module('dyoubTheme').directive('validDateAfter', [
+    angular.module('dyoub.theme').directive('validDateAfter', [
         '$parse',
         ValidDateAfterDirective
     ]);

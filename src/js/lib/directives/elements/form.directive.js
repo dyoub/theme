@@ -12,7 +12,7 @@
         };
     }
 
-    angular.module('dyoubTheme').directive('form', [
+    angular.module('dyoub.theme').directive('form', [
         FormDirective
     ]);
 

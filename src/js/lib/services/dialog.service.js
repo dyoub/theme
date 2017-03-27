@@ -42,7 +42,7 @@
         };
     }
 
-    angular.module('dyoubTheme').service('Dialog', [
+    angular.module('dyoub.theme').service('Dialog', [
         'Translate',
         DialogService
     ]);

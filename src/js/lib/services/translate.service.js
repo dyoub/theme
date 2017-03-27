@@ -9,7 +9,7 @@
         };
     }
 
-    angular.module('dyoubTheme').factory('Translate', [
+    angular.module('dyoub.theme').factory('Translate', [
         '$locale',
         TranslateFactory
     ]);

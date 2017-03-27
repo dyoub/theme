@@ -13,7 +13,7 @@
         }
     }
 
-    angular.module('dyoubTheme').filter('month', [
+    angular.module('dyoub.theme').filter('month', [
         '$locale',
         MonthFilter
     ]);

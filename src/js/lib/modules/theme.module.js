@@ -7,7 +7,7 @@
         $httpProvider.defaults.headers.post['Content-Type'] = 'application/json;charset=UTF-8';
     }
 
-    angular.module('dyoubTheme', []).config([
+    angular.module('dyoub.theme', []).config([
         '$httpProvider',
         configuration
     ]);

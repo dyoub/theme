@@ -33,7 +33,7 @@
         };
     }
 
-    angular.module('dyoubTheme').directive('validNumberMin', [
+    angular.module('dyoub.theme').directive('validNumberMin', [
         '$parse',
         ValidNumberMinDirective
     ]);

@@ -16,7 +16,7 @@
         };
     }
 
-    angular.module('dyoubTheme').directive('help', [
+    angular.module('dyoub.theme').directive('help', [
         'Dialog',
         HelpDirective
     ]);

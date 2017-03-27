@@ -159,7 +159,7 @@
         };
     }
 
-    angular.module('dyoubTheme').directive('deviceCamera', [
+    angular.module('dyoub.theme').directive('deviceCamera', [
         CameraDirective
     ]);
 

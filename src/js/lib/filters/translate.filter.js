@@ -9,7 +9,7 @@
         }
     }
 
-    angular.module('dyoubTheme').filter('translate', [
+    angular.module('dyoub.theme').filter('translate', [
         'Translate',
         TranslateFilter
     ]);

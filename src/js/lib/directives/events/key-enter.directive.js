@@ -16,7 +16,7 @@
         };
     }
 
-    angular.module('dyoubTheme').directive('eventKeyEnter', [
+    angular.module('dyoub.theme').directive('eventKeyEnter', [
         '$parse',
         EventKeyEnterDirective
     ]);

@@ -31,7 +31,7 @@
         };
     }
 
-    angular.module('dyoubTheme').directive('typeTime', [
+    angular.module('dyoub.theme').directive('typeTime', [
         '$parse',
         TypeTimeDirective
     ]);

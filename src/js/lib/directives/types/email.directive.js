@@ -27,7 +27,7 @@
         };
     }
 
-    angular.module('dyoubTheme').directive('typeEmail', [
+    angular.module('dyoub.theme').directive('typeEmail', [
         TypeEmailDirective
     ]);
 
