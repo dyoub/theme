@@ -3,16 +3,21 @@
 
 (function () {
 
-    function TranslateDirective(translate) {
+    function TranslateDirective($parse, translate) {
         return {
             restrict: 'A',
             link: function (scope, $element, attrs) {
-                $element.html(translate(attrs.translate));
+                scope.$watch(function () {
+                    return attrs.translate;
+                }, function (label) {
+                    $element.html(translate(label));
+                });
             }
         };
     }
 
     angular.module('dyoub.theme').directive('translate', [
+        '$parse',
         'Translate',
         TranslateDirective
     ]);
