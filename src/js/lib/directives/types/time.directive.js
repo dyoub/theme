@@ -7,8 +7,7 @@
 
     function TypeTimeDirective($parse) {
         function link(scope, $element, attrs, ngModelCtrl) {
-            var maskFormat = '99:99',
-                ngModel = $parse(attrs.ngModel);
+            var maskFormat = '99:99';
 
             ngModelCtrl.$parsers.unshift(function (viewValue) {
                 if (VALIDITY_REGEXP.test(viewValue)) {

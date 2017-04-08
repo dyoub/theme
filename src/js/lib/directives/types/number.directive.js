@@ -5,7 +5,7 @@
 
     var VALIDITY_REGEXP = /[-+]?(\d*[.,])?\d+$/;
 
-    function TypeNumberDirective($compile, $filter, $locale) {
+    function TypeNumberDirective($filter, $locale) {
         function link(scope, $element, attrs, ngModelCtrl) {
             var options = attrs.typeNumber ? attrs.typeNumber.split(',') : [],
                 precision = parseInt(options[0]) || 4,
@@ -55,7 +55,6 @@
     }
 
     angular.module('dyoub.theme').directive('typeNumber', [
-        '$compile',
         '$filter',
         '$locale',
         TypeNumberDirective
