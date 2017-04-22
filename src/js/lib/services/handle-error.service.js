@@ -7,7 +7,7 @@
         return function (response) {
             switch (response.status) {
                 case undefined:
-                case null: dialog.error('UnkownError'); break;
+                case null: dialog.error('Unkown error.'); break;
                 case 422: dialog.error(response.data); break;
                 default: dialog.error(response.status); break;
             }
