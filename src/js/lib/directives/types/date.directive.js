@@ -3,10 +3,11 @@
 
 (function () {
 
-    function TypeDateDirective($filter, $locale, $parse) {
+    var ASPNET_DATE_REGEXP = /^\/Date\(\d*\)\/$/;
+
+    function TypeDateDirective($locale, $parse) {
         function link(scope, $element, attrs, ngModelCtrl) {
-            var $ctimeFilter = $filter('ctime'),
-                maskFormat = '99/99/9999',
+            var maskFormat = '99/99/9999',
                 ngModel = $parse(attrs.ngModel),
                 today = new Date();
 
@@ -21,7 +22,14 @@
             });
 
             ngModelCtrl.$formatters.push(function (modelValue) {
-                return $ctimeFilter(modelValue, $locale.DATETIME_FORMATS.shortDate);
+                if (!modelValue) return undefined;
+                return moment(modelValue).format($locale.DATETIME_FORMATS.shortDate);
+            });
+
+            scope.$watch(attrs.ngModel, function (newValue) {
+                if (ASPNET_DATE_REGEXP.test(newValue)) {
+                    ngModel.assign(scope, moment(newValue).toDate());
+                }
             });
 
             $element.attr('maxlength', maskFormat.length);
@@ -36,7 +44,6 @@
     }
 
     angular.module('dyoub.theme').directive('typeDate', [
-        '$filter',
         '$locale',
         '$parse',
         TypeDateDirective
