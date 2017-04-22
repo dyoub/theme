@@ -19,8 +19,8 @@
                 medium: "d 'de' MMM 'de' y HH:mm:ss",
                 mediumDate: "d 'de' MMM 'de' y",
                 mediumTime: "HH:mm:ss",
-                short: "dd/MM/yy HH:mm",
-                shortDate: "dd/MM/yy",
+                short: "DD/MM/YYYY HH:mm",
+                shortDate: "DD/MM/YYYY",
                 shortTime: "HH:mm"
             },
             NUMBER_FORMATS: {

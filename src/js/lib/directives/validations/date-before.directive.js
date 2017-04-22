@@ -3,14 +3,14 @@
 
 (function () {
 
-    function ValidDateBeforeDirective($parse) {
+    function ValidDateBeforeDirective($locale, $parse) {
         function link(scope, $element, attrs, ngModelCtrl) {
             var dateGetter = $parse(attrs.validDateBefore);
 
             function validate(date, anotherDate) {
                 var isValid = ngModelCtrl.$isEmpty(date) ||
                               ngModelCtrl.$isEmpty(anotherDate) ||
-                              date.before(anotherDate);
+                              moment(date).isBefore(anotherDate);
 
                 ngModelCtrl.$setValidity('dateBefore', isValid);
             }
@@ -34,6 +34,7 @@
     }
 
     angular.module('dyoub.theme').directive('validDateBefore', [
+        '$locale',
         '$parse',
         ValidDateBeforeDirective
     ]);

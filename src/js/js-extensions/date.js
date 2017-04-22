@@ -3,26 +3,6 @@
 
 (function () {
 
-    Date.prototype.after = function (date) {
-        var currentDate = this;
-
-        if (date === null || date === undefined) {
-            return false;
-        }
-
-        return this.getTime() > date.getTime();
-    };
-
-    Date.prototype.before = function (date) {
-        var currentDate = this;
-
-        if (date === null || date === undefined) {
-            return false;
-        }
-
-        return this.getTime() < date.getTime();
-    };
-
     Date.prototype.equals = function (date) {
         var currentDate = this;
 

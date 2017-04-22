@@ -10,7 +10,7 @@
             function validate(date, anotherDate) {
                 var isValid = ngModelCtrl.$isEmpty(date) ||
                               ngModelCtrl.$isEmpty(anotherDate) ||
-                              date.after(anotherDate);
+                              moment(date).isAfter(anotherDate);
 
                 ngModelCtrl.$setValidity('dateAfter', isValid);
             }
