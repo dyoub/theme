@@ -8,6 +8,16 @@
         .modal-content {
             color: $text-color;
             background: $bg-color;
+
+            button.outline,
+            .as-button.outline {
+                &:hover,
+                &:focus {
+                    color: $bg-color;
+                    border-color: $white;
+                    background-color: $white;
+                }
+            }
         }
     }
 }
@@ -34,7 +44,7 @@ body.modal-open {
         background: darken($white, 5%);
         -webkit-overflow-scrolling: touch;
         margin: 0;
-        padding: 25px;
+        padding: 15px;
         -webkit-box-shadow: 0 1px 3px darken($white, 30%);
         box-shadow: 0 1px 3px darken($white, 30%);
         text-align: center;
@@ -47,16 +57,12 @@ body.modal-open {
         transition: all .3s;
         opacity: 0;
 
-        button.close {
-            position: absolute;
-            top: 0;
-            right: 0;
-            padding: 20px;
-            margin: 0;
-            font-size: 16pt;
+        button.outline,
+        .as-button.outline {
             color: $white;
+            border-color: $white;
             background-color: transparent;
-            box-shadow: none;
+            margin: 0;
         }
     }
 

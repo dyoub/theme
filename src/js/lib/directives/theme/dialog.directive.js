@@ -7,8 +7,10 @@
         var template =
                 '<div class="modal" data-ng-class="{ \'success\': isSuccess, \'info\': isInfo, \'danger\': isError }" data-modal-open="dialogOpen">' +
                     '<div class="modal-content">' +
-                        '<div data-ng-repeat="message in messages" data-ng-bind="message"></div>' +
-                        '<button type="button" class="close" data-ng-click="close()">&times;</button>' +
+                        '<div class="box">' +
+                            '<div data-ng-repeat="message in messages" data-ng-bind="message"></div>' +
+                        '</div>' +
+                        '<button type="button" class="outline" data-ng-click="close()">OK</button>' +
                     '</div>' +
                 '</div>';
 
