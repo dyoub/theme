@@ -6,20 +6,20 @@
 .portfolio .footer {
     background-color: $night;
     padding: 20px;
-    border-top: 15px solid $bla;
+    border-top: 15px solid $river;
     text-align: center;
-    color: lighten($bla, 15%);
+    color: lighten($river, 15%);
 
     .d {
         content: url("https://dyoub.s3.amazonaws.com/cdn/img/d.png");
     }
 
     a {
-        color: lighten($bla, 15%);
+        color: lighten($river, 15%);
         font-size: 11pt;
 
         &:hover {
-            color: lighten($bla, 30%);
+            color: lighten($river, 30%);
         }
     }
 

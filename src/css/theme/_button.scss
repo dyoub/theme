@@ -3,11 +3,11 @@
 
 @import "palette";
 
-@mixin new-button-color($name, $text-color, $bg-normal) {
+@mixin new-button-color($name, $text-color, $bg-color) {
     button.#{$name},
     .as-button.#{$name} {
         color: $text-color;
-        background-color: $bg-normal;
+        background-color: $bg-color;
 
         &:hover,
         &:focus,
@@ -15,38 +15,38 @@
         &:active:hover,
         &:active:focus {
             color: $text-color;
-            background-color: darken($bg-normal, 10%);
+            background-color: darken($bg-color, 10%);
 
             &.bordered,
             &.bordered {
-                border-bottom: 5px solid darken($bg-normal, 15%);
+                border-bottom: 5px solid darken($bg-color, 15%);
             }
         }
 
         &[disabled]:hover,
         &[disabled]:focus {
             color: $text-color;
-            background-color: $bg-normal;
+            background-color: $bg-color;
         }
     }
 
     button.#{$name}.outline,
     .as-button.#{$name}.outline {
-        color: $bg-normal;
-        border-color: $bg-normal;
+        color: $bg-color;
+        border-color: $bg-color;
         background-color: transparent;
 
         &:hover,
         &:focus {
             color: $text-color;
-            border-color: $bg-normal;
-            background-color: $bg-normal;
+            border-color: $bg-color;
+            background-color: $bg-color;
         }
 
         &[disabled]:hover,
         &[disabled]:focus {
-            color: $bg-normal;
-            border-color: $bg-normal;
+            color: $bg-color;
+            border-color: $bg-color;
             background-color: transparent;
             text-decoration: none;
         }
@@ -54,7 +54,7 @@
 
     button.#{$name}.bordered,
     .as-button.#{$name}.bordered {
-        border-bottom: 5px solid darken($bg-normal, 5%);
+        border-bottom: 5px solid darken($bg-color, 5%);
     }
 }
 
