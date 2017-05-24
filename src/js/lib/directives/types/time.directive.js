@@ -16,7 +16,7 @@
                 }
 
                 ngModelCtrl.$setValidity('time', ngModelCtrl.$isEmpty(viewValue));
-                return undefined;
+                return null;
             });
 
             $element.attr('maxlength', maskFormat.length);
